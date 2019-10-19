@@ -1,0 +1,68 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 1,
+  "fields": {
+    "text": "\u0432\u043e\u043f\u0440\u043e\u0441",
+    "created_at": "2019-10-19T06:34:16.983Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 2,
+  "fields": {
+    "text": "\u0432\u043e\u043f\u0440\u043e\u0441 2",
+    "created_at": "2019-10-19T06:34:32.184Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 3,
+  "fields": {
+    "text": "\u0432\u043e\u043f\u0440\u043e\u0441 3",
+    "created_at": "2019-10-19T06:35:07.976Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "option_text": "\u043e\u0442\u0432\u0435\u0442",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "option_text": "\u043e\u0442\u0432\u0435\u0442 2",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 3,
+  "fields": {
+    "option_text": "\u043e\u0442\u0432\u0435\u0442 3",
+    "poll": 3
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$gRcScxnO1Dzi$vO8B/Cq93ADVF+m+zqyoMguQFs5DGDcDcn3EOymZeUM=",
+    "last_login": "2019-10-19T06:32:11.664Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-10-18T12:25:07.636Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
