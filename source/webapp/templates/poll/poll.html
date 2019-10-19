@@ -18,6 +18,7 @@
             <p><b>{{ choice.option_text }}</b></p>
             <p class="projects-links">
 {#                <a href="{% url 'task_view' task.pk %}">More</a>#}
+                <li><a href="{% url 'poll_answer' poll.pk %}">Answer</a></li>
                 <a href="{% url 'choice_update' choice.pk %}">Edit</a>
                 <a href="{% url 'choice_delete' choice.pk %}">Delete</a>
             </p>
