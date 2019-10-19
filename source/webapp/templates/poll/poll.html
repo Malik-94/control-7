@@ -11,4 +11,25 @@
         <p>Created by {{ poll }} at {{ poll.created_at|date:'Y-m-d H:i:s' }}</p>
         <div class="pre">{{ poll }}</div>
     </div>
+
+    <h3>Choises:</h3>
+    {% for choice in poll.text_poll.all %}
+        <div class="task">
+            <p><b>{{ choice.option_text }}</b></p>
+            <p class="projects-links">
+{#                <a href="{% url 'task_view' task.pk %}">More</a>#}
+                <a href="{% url 'choice_update' choice.pk %}">Edit</a>
+                <a href="{% url 'choice_delete' choice.pk %}">Delete</a>
+            </p>
+        </div>
+    {% empty %}
+        <p>No choice yet.</p>
+    {% endfor %}
+    {% if is_paginated %}
+        {% include 'partial/pagination.html' %}
+    {% endif %}
+    <a href="{% url 'choice_add' poll.pk %}"> edd</a>
+{#    <form action="{% url 'choice_add' poll.pk %}" method="POST" id="add_choice">#}
+{#        {% include 'partial/article_form.html' with button_text='Add' %}#}
+{#      </form>#}
 {% endblock %}

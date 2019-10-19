@@ -5,8 +5,6 @@ from webapp.forms import PollForm
 from webapp.models import Poll
 
 
-
-
 class IndexView(ListView):
     template_name = 'poll/index.html'
     context_object_name = 'polls'
