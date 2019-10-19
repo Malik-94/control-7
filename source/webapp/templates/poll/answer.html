@@ -6,7 +6,7 @@
    <form action="{% url "poll_answer" poll.pk %}" method="POST">
    {% csrf_token %}
         {% for choice in choices %}
-        <input type="radio" value="{{ choice.pk }}" id="{{ choice.pk }}" name="answer" style="height: 20px; width: 20px"> {{ choice.answer }}<hr/>
+        <input type="radio" value="{{ choice.pk }}" id="{{ choice.pk }}" name="answer" style="height: 20px; width: 20px"> {{ choice.option_text }}<hr/>
         {% endfor %}
         <input type="submit" value="Select" class="btn btn-primary">
    </form>
